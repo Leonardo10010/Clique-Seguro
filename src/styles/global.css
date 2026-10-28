@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-body: "Atkinson Hyperlegible Next", sans-serif;
+    --color-black: #1C2733;
+    --color-white: #FFFFFF;
+    --color-linear: #DCEBFB;
+    --color-blue: #0B5CAD;
+    --color-blue-dark: #0B2A4A;
+    --color-gray: #B9C8DC;
+    --color-line: #D5DEEA;
+    --color-yellow: #FFD25A;
+    --color-yellow-light: #FFF4CF;
+    --color-blue-light: #EAF2FC;
+    --color-green: #E3F4EA;
+    --color-lilac: #EFEDFA;
+}

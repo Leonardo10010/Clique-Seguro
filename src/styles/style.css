@@ -133,3 +133,29 @@ h1{
 .btn-main-teste:hover{
     transform: scale(1.02);
 }
+
+.section-benefits{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-blue-dark);
+    padding: 40px;
+}
+
+.cards-benefits{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-benefits h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.cards-benefits p{
+    font-size: 17px;
+    color: var(--color-gray);
+}

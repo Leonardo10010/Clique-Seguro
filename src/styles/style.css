@@ -1,0 +1,66 @@
+@import url(./global.css);
+
+body{
+    font-family: var(--font-body);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-white);
+    border-bottom: 1px solid #D5DEEA;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+#active-inicio{
+    color: var(--color-blue);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: var(--color-black);
+    transition: 0.5s;
+}
+
+.nav-header a:hover{
+    color: #363636;
+    transform: scale(1.02);
+}
+
+.nav-links-header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #F2F7FD;
+    border: 1px solid #D5DEEA;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.nav-links-header a{
+    color: var(--color-blue-dark);
+    background-color: var(--color-white);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#contraste{
+    width: 15px;
+}
+
+a #text1{
+    font-size: 16px;
+}
+
+a #text2{
+    font-size: 22;
+}
+

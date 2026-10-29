@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clique Seguro</title>
+    <link rel="stylesheet" href="./src/styles/quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./src/images/Ilustração (1).png" alt="Logo Clique Seguro">
+        
+        <nav class="nav-header">
+            <a href="" id="active-inicio">Início</a>
+            <a href="">Aprenda</a>
+            <a href="">Teste seus conhecimentos</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+            <div class="nav-links-header">
+                <a href="" id="text1">A-</a>
+                <a href="" id="text2">A+</a>
+                <a href=""><img src="./src/images/Ícone contraste.png" alt="Icone contraste" id="contraste"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-quiz">
+        <div class="quiz-intro">
+            <h1>Teste seus conhecimentos</h1>
+            <p>Cinco perguntas sobre segurança digital. Não tem pressa e não vale nota: o importante é aprender.</p>
+            <img src="./src/images/Ilustração (6).png" alt="Prancheta com perguntas e um escudo de segurança" class="quiz-img">
+            <div class="quiz-steps">
+                <div class="step step-active">
+                    <p class="step-number">1</p>
+                    <p>Senhas fortes</p>
+                </div>
+                <div class="step">
+                    <p class="step-number">2</p>
+                    <p>Mensagens falsas</p>
+                </div>
+                <div class="step">
+                    <p class="step-number">3</p>
+                    <p>Links perigosos</p>
+                </div>
+                <div class="step">
+                    <p class="step-number">4</p>
+                    <p>Aplicativos</p>
+                </div>
+                <div class="step">
+                    <p class="step-number">5</p>
+                    <p>Dados pessoais</p>
+                </div>
+            </div>
+        </div>
+    <form class="quiz-card" action="#">
+        <div class="quiz-progress">
+            <p>Pergunta 1 de 5</p>
+            <div class="progress-bar">
+                <div class="progress-part progress-done"></div>
+                <div class="progress-part"></div>
+                <div class="progress-part"></div>
+                <div class="progress-part"></div>
+                <div class="progress-part"></div>
+            </div>
+        </div>
+
+        <div class="quiz-question">
+            <h2>Qual destas senhas é mais segura?</h2>
+            <a href="#" class="btn-listen">
+                <img src="./src/images/som.png" alt="">
+                Ouvir
+            </a>
+        </div>
+
+        <div class="quiz-options">
+            <label class="option">
+                <input type="radio" name="pergunta1" value="a" required>
+                <span class="option-letter">A</span>
+                <span class="option-text">123456</span>
+            </label>
+
+            <label class="option">
+                <input type="radio" name="pergunta1" value="b">
+                <span class="option-letter">B</span>
+                <span class="option-text">maria1950</span>
+            </label>
+
+            <label class="option">
+                <input type="radio" name="pergunta1" value="c">
+                <span class="option-letter">C</span>
+                <span class="option-text">Gato-Azul-Chuva-27!</span>
+            </label>
+
+            <label class="option">
+                <input type="radio" name="pergunta1" value="d">
+                <span class="option-letter">D</span>
+                <span class="option-text">senha</span>
+            </label>
+        </div>
+
+        <div class="quiz-actions">
+            <a href="index.html" class="quiz-exit">Sair do teste</a>
+            <button type="submit" class="btn-quiz">Confirmar resposta</button>
+        </div>
+    </form>
+    </section>
+
+
+    <section class="section-regras">
+        <div class="content-section-regras">
+            <h2>Três regras que valem para qualquer pergunta</h2>
+            <p>Se ficar em dúvida no teste ou no dia a dia, volte a estas três ideias.</p>
+        </div>
+
+        <div class="cards-section-regras">
+            <div class="card-content-regras" id="yellow">
+                <img src="./src/images/ÍconeR1.png" alt="Icon regras" class="img-regras">
+                <h3>Desconfie da pressa</h3>
+                <p>Golpistas querem que você aja rápido. Pare, respire e pergunte a alguém de confiança.</p>
+            </div>
+            <div class="card-content-regras" id="red">
+                <img src="./src/images/Íconer2.png" alt="Icon regras" class="img-regras">
+                <h3>Confirme por outro caminho</h3>
+                <p>Recebeu um pedido estranho? Ligue para o número que você já conhece, não para o da mensagem.</p>
+            </div>
+            <div class="card-content-regras" id="blue">
+                <img src="./src/images/Íconer3.png" alt="Icon regras" class="img-regras">
+                <h3>Senha é só sua</h3>
+                <p>Nenhum banco, empresa ou parente de verdade vai pedir sua senha ou código por mensagem.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content-container">
+            <div class="content-footer">
+                <img src="./src/images/Ilustração (5).png" alt="Logo Clique Seguro" class="img-footer">
+                <h2>Aprender também é se proteger.</h2>
+                <p>Educação digital para idosos, com linguagem simples e no seu ritmo.</p>
+            </div>
+
+            <nav class="nav-links-footer">
+                <div class="link-footer">
+                    <h3>Navegue</h3>
+                    <a href="">Início</a>
+                    <a href="">Aprenda</a>
+                    <a href="">Teste seus conhecimentos</a>
+                    <a href="">Sobre</a>
+                </div>
+                <div class="link-footer">
+                    <h3>Ajuda</h3>
+                    <a href="">Central de ajuda</a>
+                    <a href="">Perguntas frequentes</a>
+                    <a href="">Fórum</a>
+                    <a href="">Contato</a>
+                </div>
+                <div class="link-footer">
+                    <h3>Siga a gente</h3>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    <a href="">LinkedIn</a>
+                    <a href="">WhatsApp</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content-footer-final">
+            <p>© 2026 Clique Seguro</p>
+            <p>Em caso de golpe, ligue 190 ou procure a delegacia mais próxima.</p>
+        </div>
+    </footer>
+</body>
+</html>

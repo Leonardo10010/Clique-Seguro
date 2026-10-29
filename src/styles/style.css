@@ -396,10 +396,12 @@ h1{
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .btn-light:hover {
     background-color: var(--color-yellow);
+    transform: scale(1.02);
 }
 
 .btn-light:focus-visible {
@@ -471,4 +473,47 @@ h1{
     color: #0B5CAD;
     font-size: 16px;
     font-weight: 700;
+}
+
+.section-explanation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F7FD;
+    padding: 80px;
+}
+
+.section-explanation-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-explanation-content h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-blue-dark);
+}
+
+.card-explanation{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.content-card-explanation{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.content-card-explanation h3{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--color-blue-dark);
+}
+
+.content-card-explanation p{
+    font-size: 19px;
+    color: var(--color-black);
 }

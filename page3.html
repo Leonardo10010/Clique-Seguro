@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clique Seguro</title>
-    <link rel="stylesheet" href="./src/styles/somos.css">
+    <link rel="stylesheet" href="./src/styles/page3.css">
 </head>
 <body>
     <header>
-        <img src="./src/images/Ilustração (1).png" alt="Logo Clique Seguro">
-        
-        <nav class="nav-header">
-            <a href="" id="active-inicio">Início</a>
-            <a href="">Aprenda</a>
-            <a href="">Teste seus conhecimentos</a>
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
-            <div class="nav-links-header">
-                <a href="" id="text1">A-</a>
-                <a href="" id="text2">A+</a>
-                <a href=""><img src="./src/images/Ícone contraste.png" alt="Icone contraste" id="contraste"></a>
+        <img src="./src/images/logo_header.png" alt="Logo Clique Seguro">
+
+        <nav class="header-nav">
+            <a href="./page1.html" id="active-link">Início</a>
+            <a href="#learn">Aprenda</a>
+            <a href="./page2.html">Teste seus conhecimentos</a>
+            <a href="./page3.html">Sobre</a>
+            <a href="#faq">FAQ</a>
+            <a href="#footer">Contato</a>
+            <div class="header-accessibility">
+                <a href="" id="font-decrease">A-</a>
+                <a href="" id="font-increase">A+</a>
+                <a href="" class="header-logo"><img src="./src/images/icon_contraste.png" alt="Ícone contraste" id="contrast-icon"></a>
             </div>
         </nav>
     </header>
@@ -32,7 +33,7 @@
             <p id="active-p">Ensinamos a identificar golpes virtuais, proteger informações 
                 pessoais e usar o celular e a internet de forma consciente, sempre com orientações práticas.</p>
         </div>
-        <img src="./src/images/Ilustração (7).png" alt="Ilustração de uma idosa">
+        <img src="./src/images/ilustracao_idosa_computador.png" alt="Ilustração de uma idosa">
     </section>
 
     <section class="section-fizemos">
@@ -58,7 +59,7 @@
     </section>
 
     <section class="section-aprender">
-        <img src="./src/images/Ilustração (8).png" alt="Ilustração de uma idosa">
+        <img src="./src/images/ilustracao_idosos.png" alt="Ilustração de dois idosos">
 
         <div class="content-section-aprender">
             <h2>“Aprender também é se proteger.”</h2>
@@ -147,30 +148,30 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content-container">
-            <div class="content-footer">
-                <img src="./src/images/Ilustração (5).png" alt="Logo Clique Seguro" class="img-footer">
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="./src/images/logo_cliqueseguro.png" alt="Logo Clique Seguro" class="footer-logo">
                 <h2>Aprender também é se proteger.</h2>
                 <p>Educação digital para idosos, com linguagem simples e no seu ritmo.</p>
             </div>
 
-            <nav class="nav-links-footer">
-                <div class="link-footer">
+            <nav class="footer-nav">
+                <div class="footer-column">
                     <h3>Navegue</h3>
-                    <a href="">Início</a>
-                    <a href="">Aprenda</a>
-                    <a href="">Teste seus conhecimentos</a>
-                    <a href="">Sobre</a>
+                    <a href="#active-link">Início</a>
+                    <a href="#learn">Aprenda</a>
+                    <a href="./page2.html">Teste seus conhecimentos</a>
+                    <a href="./page3.html">Sobre</a>
                 </div>
-                <div class="link-footer">
+                <div class="footer-column">
                     <h3>Ajuda</h3>
                     <a href="">Central de ajuda</a>
-                    <a href="">Perguntas frequentes</a>
+                    <a href="#faq">Perguntas frequentes</a>
                     <a href="">Fórum</a>
                     <a href="">Contato</a>
                 </div>
-                <div class="link-footer">
+                <div class="footer-column">
                     <h3>Siga a gente</h3>
                     <a href="">Instagram</a>
                     <a href="">Facebook</a>
@@ -179,7 +180,7 @@
                 </div>
             </nav>
         </div>
-        <div class="content-footer-final">
+        <div class="footer-bottom">
             <p>© 2026 Clique Seguro</p>
             <p>Em caso de golpe, ligue 190 ou procure a delegacia mais próxima.</p>
         </div>

@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 64px;
-    padding: 88px 120px 96px;
+    padding: 80px;
     background: var(--color-linear);
 }
 

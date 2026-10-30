@@ -1,0 +1,350 @@
+@import url("./global.css");
+
+body {
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+.section-somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    padding: 88px 120px 96px;
+    background: var(--color-linear);
+}
+
+.content-section-somos {
+    flex: 1;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content-section-somos h2 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: -1px;
+    color: var(--color-blue-dark);
+}
+
+.content-section-somos p {
+    max-width: 580px;
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--color-black);
+}
+
+#active-p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #4A5868;
+}
+
+.img-somos {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-width: 0;
+}
+
+.section-fizemos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.section-fizemos h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56px;
+    color: var(--color-blue-dark);
+}
+
+.cards-section-fizemos {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards-fizemos {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding-right: 32px;
+    margin-right: 32px;
+    border-right: 2px solid var(--color-line);
+    text-align: center;
+}
+
+.cards-fizemos:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+}
+
+.cards-fizemos h3{
+    font-size: 56px;
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.cards-fizemos p{
+    font-size: 20px;
+    color: var(--color-black);
+}
+
+.section-aprender{
+    display: flex;
+    justify-content: space-around;
+    gap: 56px;
+    align-items: center;
+    background-color: #FFF4CF;
+    padding: 80px;
+}
+
+.content-section-aprender{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 724px;
+}
+
+.content-section-aprender h2{
+    color: var(--color-blue-dark);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.content-section-aprender p{
+    color: var(--color-black);
+    font-size: 21px;
+}
+
+.section-valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 104px 120px;
+    background-color: var(--color-white);
+}
+
+.valores-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 640px;
+    text-align: center;
+}
+
+.valores-topo h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56px;
+    color: var(--color-blue-dark);
+}
+
+.valores-topo p {
+    font-size: 21px;
+    line-height: 33px;
+    color: #4A5868;
+}
+
+.valores-cards {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.valor-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--color-line);
+    border-radius: 28px;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.valor-faixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    background-image: radial-gradient(rgba(11, 42, 74, 0.10) 2px, transparent 2px);
+    background-size: 20px 20px;
+}
+
+.card-azul .valor-faixa {
+    background-color: var(--color-blue-light);
+}
+
+.card-amarelo .valor-faixa {
+    background-color: var(--color-yellow-light);
+}
+
+.card-verde .valor-faixa {
+    background-color: var(--color-green);
+}
+
+.valor-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    box-shadow: 0 12px 28px rgba(11, 42, 74, 0.12);
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.card-azul .valor-icone {
+    color: var(--color-blue);
+}
+
+.card-amarelo .valor-icone {
+    color: #B07800;
+}
+
+.card-verde .valor-icone {
+    color: #1F8A4C;
+    font-size: 56px;
+}
+
+.valor-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 32px;
+}
+
+.valor-texto h3 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    color: var(--color-blue-dark);
+}
+
+.valor-texto p {
+    font-size: 19px;
+    line-height: 29px;
+    color: var(--color-black);
+}
+
+.section-grupo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 56px;
+    padding: 100px;
+    background-color: var(--color-white);
+}
+
+.section-grupo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-section-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-section-grupo h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-blue-dark);
+}
+
+.content-section-grupo p{
+    font-size: 20px;
+    color: #4A5868;
+}
+
+.cards-section-grupo{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.content-card-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid #D5DEEA;
+    width: 300px;
+    padding: 28px;
+    border-radius: 24px;
+}
+
+.content-card-grupo h3{
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--color-blue-dark);
+}
+
+.content-card-grupo p{
+    font-size: 18px;
+    color: #4A5868;
+}
+
+.img-representantes{
+    width: 120px;
+    border-radius: 100%;
+}
+
+.content-card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 56px;
+    background-color: var(--color-blue);
+    border-radius: 28px;
+}
+
+.content-card-secundary {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content-card-secundary h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-white);
+}
+
+.content-card-secundary p{
+    font-size: 21px;
+    color: var(--color-white);
+}
+
+.btn-grupo{
+    padding: 15px 30px;
+    background-color: var(--color-white);
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+    border-radius: 14px;
+    transition: 0.5s;
+}
+
+.btn-grupo:hover{
+    transform: scale(1.03);
+}

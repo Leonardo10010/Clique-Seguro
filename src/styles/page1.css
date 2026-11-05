@@ -583,12 +583,21 @@ main > img {
   
 }
 @media (min-width: 768px) {
+   main {
+    width: 95vw;
+   }
+
+   .section-benefits {
+    width: 95vw;
+    
+   }
   
+
 }
 @media only screen and (max-width: 480px) {
-  
-    header {
-        width: 10vw;
-    }
+  main {
+    width: 195vw;
+  }
+   
   
 }

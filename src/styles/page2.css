@@ -330,3 +330,28 @@ body {
 #blue{
     background-color: #EAF2FC;
 }
+
+@media (min-width: 1200px) {
+  
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 768px) {
+
+  
+
+}
+@media only screen and (max-width: 480px) {
+ .section-quiz {
+    width: 250vw;
+    flex-direction: column;
+ }
+
+
+
+    
+    
+ }
+   
+  

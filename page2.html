@@ -69,7 +69,7 @@
         </div>
 
         <div class="quiz-question">
-            <h2>Qual destas senhas é mais segura?</h2>
+            <h2 id="question">Qual destas senhas é mais segura?</h2>
             <a href="#" class="btn-listen">
                 <img src="./src/images/som.png" alt="">
                 Ouvir
@@ -80,31 +80,31 @@
             <label class="option">
                 <input type="radio" name="pergunta1" value="a" required>
                 <span class="option-letter">A</span>
-                <span class="option-text">123456</span>
+                <span class="option-text"></span>
             </label>
 
             <label class="option">
                 <input type="radio" name="pergunta1" value="b">
                 <span class="option-letter">B</span>
-                <span class="option-text">maria1950</span>
+                <span class="option-text"></span>
             </label>
 
             <label class="option">
                 <input type="radio" name="pergunta1" value="c">
                 <span class="option-letter">C</span>
-                <span class="option-text">Gato-Azul-Chuva-27!</span>
+                <span class="option-text"></span>
             </label>
 
             <label class="option">
                 <input type="radio" name="pergunta1" value="d">
                 <span class="option-letter">D</span>
-                <span class="option-text">senha</span>
+                <span class="option-text"></span>
             </label>
         </div>
 
         <div class="quiz-actions">
             <a href="page1.html" class="quiz-exit">Sair do teste</a>
-            <button type="submit" class="btn-quiz">Confirmar resposta</button>
+            <button type="button" class="btn-quiz" id="btn-quiz">Confirmar resposta</button>
         </div>
     </form>
     </section>
@@ -172,5 +172,6 @@
             <p>Em caso de golpe, ligue 190 ou procure a delegacia mais próxima.</p>
         </div>
     </footer>
+    <script src="./quiz.js"></script>
 </body>
 </html>

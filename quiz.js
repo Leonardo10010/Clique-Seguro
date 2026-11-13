@@ -15,33 +15,33 @@ const quiz = {
         ]
     },
     2: {
-        question: "Qual cor é o céu?",
+        question: "Como identificar uma mensagem falsa?",
         options: [
-            "Azul",
-            "Amarelo",
-            "Vermelho",
-            "Rosa"
+            "Acreditar em tudo que recebe.",
+            "Confiar porque um amigo enviou.",
+            "Achar que é verdade porque tem muitas mensagens compartilhadas.",
+            "Verificar se a informação vem de uma fonte confiável."
         ],
         answer: [
-            { option: "Azul", isCorrect: true },
-            { option: "Amarelo", isCorrect: false },
-            { option: "Vermelho", isCorrect: false },
-            { option: "Rosa", isCorrect: false }
+            { option: "Acreditar em tudo que recebe.", isCorrect: false },
+            { option: "Confiar porque um amigo enviou.", isCorrect: false },
+            { option: "Achar que é verdade porque tem muitas mensagens compartilhadas.", isCorrect: false },
+            { option: "Verificar se a informação vem de uma fonte confiável.", isCorrect: true }
         ]
     },
     3: {
-        question: "Pergunta2?",
+        question: "por que não devemos clicar em links suspeitos?",
         options: [
-            "1",
-            "2",
-            "a",
-            "B"
+            "Porque eles são mais rápidos",
+            "Porque podem conter malware",
+            "Porque não têm design atraente",
+            "Porque são difíceis de encontrar"
         ],
         answer: [
-            { option: "1", isCorrect: true },
-            { option: "2", isCorrect: false },
-            { option: "a", isCorrect: false },
-            { option: "B", isCorrect: false }
+            { option: "Porque eles são mais rápidos", isCorrect: false },
+            { option: "Porque podem conter malware", isCorrect: true },
+            { option: "Porque não têm design atraente", isCorrect: false },
+            { option: "Porque são difíceis de encontrar", isCorrect: false }
         ]
     },
 }
@@ -68,3 +68,8 @@ function proximaPergunta() {
     perguntaAtual++;
     popularOpcoes(perguntaAtual);
 }
+  const texto = document.getElementById("ouvir").value;
+  const botaoouvir = document.getElementById('btn-listen');
+   const mensagem = new SpeechSynthesisUtterance();
+       mensagem.lang = "pt-BR";
+         window.speechSynthesis.speak();

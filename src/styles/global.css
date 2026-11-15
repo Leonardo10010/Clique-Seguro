@@ -25,6 +25,81 @@
     --color-bubble: #EEF1F5;
 }
 
+body.dark-mode {
+    background-color: #0D131A;
+    color: #F5F9FE;
+}
+
+body.dark-mode header {
+    background-color: #131C26;
+    border-bottom-color: #263547;
+}
+
+body.dark-mode .header-nav > a {
+    color: #E2EAF4;
+}
+
+body.dark-mode .header-nav > a:hover,
+body.dark-mode .active-link {
+    color: var(--color-yellow) !important;
+    border-bottom-color: var(--color-yellow);
+}
+
+body.dark-mode .header-accessibility {
+    background-color: #0D131A;
+    border-color: #263547;
+}
+
+body.dark-mode .header-accessibility button {
+     background-color: #1C2733;
+    color: var(--color-yellow);
+}
+
+body.dark-mode #contrast-icon {
+    filter: invert(1) brightness(1.5);
+}
+
+body.dark-mode .benefit-card,
+body.dark-mode .learn-featured,
+body.dark-mode .topic-card,
+body.dark-mode .scam-card,
+body.dark-mode .step-card,
+body.dark-mode .faq-card,
+body.dark-mode .tip-card,
+body.dark-mode .quiz-card,
+body.dark-mode .card-content-regras,
+body.dark-mode .cards-fizemos,
+body.dark-mode .valor-card,
+body.dark-mode .content-card-grupo,
+body.dark-mode .card-secundary-grupo {
+    background-color: #16202C !important;
+    border: 1px solid #2A3B4D !important;
+    color: #F5F9FE !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .option-text {
+    color: #D5DEEA !important;
+}
+
+body.dark-mode .topic-link,
+body.dark-mode .quiz-exit {
+    color: var(--color-yellow) !important;
+}
+
+body.dark-mode footer {
+    background-color: #080C11;
+    border-top: 1px solid #263547;
+}
+
 footer {
     display: flex;
     flex-direction: column;

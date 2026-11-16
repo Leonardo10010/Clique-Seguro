@@ -1,15 +1,16 @@
-@import url(./global.css);
+@import url("./global.css");
 
 body {
-    font-family: "Atkinson Hyperlegible Next", sans-serif;
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .section-quiz {
     display: flex;
-    justify-content: space-around;    
-    gap: 64px;
+    justify-content: space-around;
     padding: 72px 120px 104px;
-    background: linear-gradient(to bottom, #F5F9FE, #DCEBFB);
+    background: var(--color-linear);
 }
 
 .quiz-intro {
@@ -24,13 +25,13 @@ body {
     font-size: 52px;
     font-weight: 800;
     line-height: 58px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
-.quiz-intro > p {
+.quiz-intro>p {
     font-size: 20px;
     line-height: 31px;
-    color: var(--color-black);
+    color: var(--color-text);
 }
 
 .quiz-img {
@@ -62,14 +63,14 @@ body {
     flex-shrink: 0;
     border: 2px solid var(--color-line);
     border-radius: 50%;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     font-size: 17px;
     font-weight: 700;
 }
 
 .step-active {
     font-weight: 700;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .step-active .step-number {
@@ -86,7 +87,7 @@ body {
     gap: 28px;
     padding: 48px;
     border-radius: 28px;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     box-shadow: 0 20px 48px rgba(11, 42, 74, 0.10);
 }
 
@@ -99,7 +100,7 @@ body {
 .quiz-progress p {
     font-size: 20px;
     font-weight: 700;
-    color: var(--color-blue);
+    color: var(--color-accent);
     flex-shrink: 0;
 }
 
@@ -131,7 +132,7 @@ body {
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .btn-listen {
@@ -145,7 +146,7 @@ body {
     background-color: var(--color-sky-light);
     font-size: 18px;
     font-weight: 700;
-    color: var(--color-blue);
+    color: var(--color-accent);
     text-decoration: none;
 }
 
@@ -169,7 +170,7 @@ body {
     padding: 0 22px;
     border: 2px solid var(--color-line);
     border-radius: 16px;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     cursor: pointer;
     transition: border-color 0.2s, background-color 0.2s;
 }
@@ -192,22 +193,22 @@ body {
     background-color: var(--color-sky-light);
     font-size: 20px;
     font-weight: 700;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .option-text {
     flex: 1;
     font-size: 24px;
     font-weight: 500;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .option:hover {
-    border-color: var(--color-blue);
+    border-color: var(--color-accent);
 }
 
 .option:has(input:checked) {
-    border: 3px solid var(--color-blue);
+    border: 3px solid var(--color-accent);
     background-color: var(--color-sky-light);
 }
 
@@ -251,6 +252,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .btn-quiz:hover {
@@ -263,70 +265,175 @@ body {
     outline-offset: 3px;
 }
 
-.section-regras{
+.section-rules {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: var(--color-white);
-    padding: 80px;
+    padding: 80px 120px;
+    background-color: var(--color-bg);
 }
 
-.content-section-regras{
+.rules-header {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.content-section-regras h2{
+.rules-header h2 {
     font-size: 40px;
-    font-weight: bold;
-    color: var(--color-blue-dark);
+    font-weight: 700;
+    color: var(--color-title);
 }
 
-.content-section-regras p{
+.rules-header p {
     font-size: 20px;
-    color: #4A5868;
+    color: var(--color-muted);
 }
 
-.cards-section-regras{
+.rules-grid {
     display: flex;
-    justify-content: center;
     align-items: stretch;
-    gap: 25px;
+    gap: 24px;
 }
 
-.card-content-regras{
+.rule-card {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 384px;
     padding: 32px;
     border-radius: 24px;
 }
 
-.card-content-regras h3{
-    font-size: 26px;
-    font-weight: bold;
-    color: var(--color-blue-dark);
-}
-
-.card-content-regras p{
-    font-size: 19px;
-    color: var(--color-black);
-}
-
-.img-regras{
-    width: 56px;
-}
-
-#yellow{
+.rule-card.rule-yellow {
     background-color: var(--color-yellow-light);
 }
 
-#red{
-    background-color: #E3F4EA;
+.rule-card.rule-green {
+    background-color: var(--color-green);
 }
 
-#blue{
-    background-color: #EAF2FC;
+.rule-card.rule-blue {
+    background-color: var(--color-blue-light);
+}
+
+.rule-card img {
+    width: 56px;
+}
+
+.rule-card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-title);
+}
+
+.rule-card p {
+    font-size: 19px;
+    color: var(--color-text);
+}
+
+@media (max-width: 1280px) {
+
+    .section-quiz,
+    .section-rules {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-quiz {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz-intro {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .quiz-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-quiz {
+        gap: 40px;
+        padding: 48px 20px 56px;
+    }
+
+    .section-rules {
+        padding: 56px 20px;
+    }
+
+    .quiz-intro h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .quiz-img {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .quiz-card {
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .quiz-progress {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .quiz-question {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .quiz-question h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .option {
+        height: auto;
+        min-height: 64px;
+        padding: 12px 16px;
+        gap: 14px;
+    }
+
+    .option-text {
+        font-size: 20px;
+    }
+
+    .quiz-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .btn-quiz {
+        justify-content: center;
+    }
+
+    .rules-header h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .rules-grid {
+        flex-direction: column;
+    }
+
+    .rule-card {
+        padding: 24px;
+    }
 }

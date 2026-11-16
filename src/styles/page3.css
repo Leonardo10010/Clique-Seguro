@@ -1,19 +1,21 @@
 @import url("./global.css");
 
 body {
-    font-family: "Atkinson Hyperlegible Next", sans-serif;
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
-.section-somos {
+.section-about {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 64px;
-    padding: 80px;
+    padding: 80px 120px;
     background: var(--color-linear);
 }
 
-.content-section-somos {
+.about-content {
     flex: 1;
     max-width: 620px;
     display: flex;
@@ -21,49 +23,49 @@ body {
     gap: 24px;
 }
 
-.content-section-somos h2 {
+.about-content h1 {
     font-size: 62px;
     font-weight: 800;
     line-height: 68px;
     letter-spacing: -1px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
-.content-section-somos p {
+.about-content p {
     max-width: 580px;
     font-size: 22px;
     line-height: 35px;
-    color: var(--color-black);
+    color: var(--color-text);
 }
 
-#active-p {
+.about-content .about-note {
     font-size: 20px;
     line-height: 32px;
-    color: #4A5868;
+    color: var(--color-muted);
 }
 
-.img-somos {
+.section-about>img {
     width: 100%;
     max-width: 500px;
     height: auto;
     min-width: 0;
 }
 
-.section-fizemos {
+.section-stats {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 40px;
+    padding: 40px 120px;
 }
 
-.section-fizemos h2 {
+.section-stats h2 {
     font-size: 48px;
     font-weight: 800;
     line-height: 56px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
-.cards-section-fizemos {
+.stats-grid {
     display: flex;
     justify-content: center;
     max-width: 1000px;
@@ -71,7 +73,7 @@ body {
     margin: 0 auto;
 }
 
-.cards-fizemos {
+.stat-card {
     flex: 1;
     min-width: 0;
     display: flex;
@@ -84,60 +86,60 @@ body {
     text-align: center;
 }
 
-.cards-fizemos:last-child {
+.stat-card:last-child {
     padding-right: 0;
     margin-right: 0;
     border-right: 0;
 }
 
-.cards-fizemos h3{
+.stat-card h3 {
     font-size: 56px;
-    color: var(--color-blue);
-    font-weight: bold;
+    font-weight: 700;
+    color: var(--color-accent);
 }
 
-.cards-fizemos p{
+.stat-card p {
     font-size: 20px;
-    color: var(--color-black);
+    color: var(--color-text);
 }
 
-.section-aprender{
+.section-quote {
     display: flex;
     justify-content: space-around;
-    gap: 56px;
     align-items: center;
-    background-color: #FFF4CF;
-    padding: 80px;
+    gap: 56px;
+    padding: 80px 120px;
+    background-color: var(--color-yellow-light);
 }
 
-.content-section-aprender{
+.quote-content {
     display: flex;
     flex-direction: column;
     gap: 16px;
     max-width: 724px;
 }
 
-.content-section-aprender h2{
-    color: var(--color-blue-dark);
+.quote-content h2 {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 700;
+    color: var(--color-title);
 }
 
-.content-section-aprender p{
-    color: var(--color-black);
+.quote-content p {
     font-size: 21px;
+    color: var(--color-text);
 }
 
-.section-valores {
+.section-values {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 56px;
     padding: 104px 120px;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
 }
 
-.valores-topo {
+.values-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,37 +148,37 @@ body {
     text-align: center;
 }
 
-.valores-topo h2 {
+.values-header h2 {
     font-size: 48px;
     font-weight: 800;
     line-height: 56px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
-.valores-topo p {
+.values-header p {
     font-size: 21px;
     line-height: 33px;
-    color: #4A5868;
+    color: var(--color-muted);
 }
 
-.valores-cards {
+.values-grid {
     display: flex;
     gap: 28px;
     width: 100%;
     max-width: 1200px;
 }
 
-.valor-card {
+.value-card {
     flex: 1;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-line);
     border-radius: 28px;
     overflow: hidden;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
 }
 
-.valor-faixa {
+.value-card-band {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,19 +187,19 @@ body {
     background-size: 20px 20px;
 }
 
-.card-azul .valor-faixa {
+.value-blue .value-card-band {
     background-color: var(--color-blue-light);
 }
 
-.card-amarelo .valor-faixa {
+.value-yellow .value-card-band {
     background-color: var(--color-yellow-light);
 }
 
-.card-verde .valor-faixa {
+.value-green .value-card-band {
     background-color: var(--color-green);
 }
 
-.valor-icone {
+.value-card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,140 +213,243 @@ body {
     letter-spacing: 1px;
 }
 
-.card-azul .valor-icone {
+.value-blue .value-card-icon {
     color: var(--color-blue);
 }
 
-.card-amarelo .valor-icone {
+.value-yellow .value-card-icon {
     color: #B07800;
 }
 
-.card-verde .valor-icone {
-    color: #1F8A4C;
+.value-green .value-card-icon {
     font-size: 56px;
+    color: #1F8A4C;
 }
 
-.valor-texto {
+.value-card-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 32px;
 }
 
-.valor-texto h3 {
+.value-card-content h3 {
     font-size: 30px;
     font-weight: 800;
     line-height: 36px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
-.valor-texto p {
+.value-card-content p {
     font-size: 19px;
     line-height: 29px;
-    color: var(--color-black);
+    color: var(--color-text);
 }
 
-.section-grupo{
+.section-team {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 56px;
-    padding: 100px;
-    background-color: var(--color-white);
+    padding: 100px 120px;
+    background-color: var(--color-bg);
 }
 
-.section-grupo-container{
+.team-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.content-section-grupo{
+.team-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.content-section-grupo h2{
+.team-header h2 {
     font-size: 48px;
-    font-weight: bold;
-    color: var(--color-blue-dark);
+    font-weight: 700;
+    color: var(--color-title);
 }
 
-.content-section-grupo p{
+.team-header p {
     font-size: 20px;
-    color: #4A5868;
+    color: var(--color-muted);
 }
 
-.cards-section-grupo{
+.team-grid {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
-.content-card-grupo{
+.team-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-    border: 2px solid #D5DEEA;
+    gap: 10px;
     width: 300px;
     padding: 28px;
+    border: 2px solid var(--color-line);
     border-radius: 24px;
 }
 
-.content-card-grupo h3{
+.team-card img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.team-card h3 {
     font-size: 22px;
     font-weight: 800;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
-.content-card-grupo p{
+.team-card p {
     font-size: 18px;
-    color: #4A5868;
+    color: var(--color-muted);
 }
 
-.img-representantes{
-    width: 120px;
-    border-radius: 100%;
-}
-
-.content-card-container{
+.team-cta {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 48px 56px;
-    background-color: var(--color-blue);
     border-radius: 28px;
+    background-color: var(--color-blue);
 }
 
-.content-card-secundary {
+.team-cta-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.content-card-secundary h2{
+.team-cta-content h2 {
     font-size: 40px;
     font-weight: 800;
     color: var(--color-white);
 }
 
-.content-card-secundary p{
+.team-cta-content p {
     font-size: 21px;
     color: var(--color-white);
 }
 
-.btn-grupo{
-    padding: 15px 30px;
-    background-color: var(--color-white);
-    text-decoration: none;
-    color: var(--color-black);
-    font-weight: bold;
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 60px;
+    padding: 0 30px;
     border-radius: 14px;
+    background-color: var(--color-white);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-blue-dark);
+    text-decoration: none;
     transition: 0.5s;
 }
 
-.btn-grupo:hover{
+.btn-cta:hover {
     transform: scale(1.03);
+}
+
+@media (max-width: 1280px) {
+
+    .section-about,
+    .section-stats,
+    .section-quote,
+    .section-values,
+    .section-team {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .section-about,
+    .section-quote {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .stat-card {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 0;
+    }
+
+    .section-quote>img {
+        max-width: 100%;
+    }
+
+    .team-grid {
+        flex-wrap: wrap;
+    }
+
+    .team-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .section-about,
+    .section-quote,
+    .section-values,
+    .section-team {
+        padding: 56px 20px;
+    }
+
+    .section-stats {
+        padding: 40px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .section-stats h2,
+    .quote-content h2,
+    .values-header h2,
+    .team-header h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stat-card h3 {
+        font-size: 40px;
+    }
+
+    .values-grid {
+        flex-direction: column;
+    }
+
+    .value-card-band {
+        height: 150px;
+    }
+
+    .value-card-content {
+        padding: 24px;
+    }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .team-cta {
+        padding: 32px 24px;
+    }
+
 }

@@ -1,10 +1,12 @@
 @import url("./global.css");
 
-body{
+body {
     font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
-main {
+.section-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +15,7 @@ main {
     background: var(--color-linear);
 }
 
-main > img {
+.section-hero>img {
     width: 100%;
     max-width: 560px;
     min-width: 0;
@@ -29,9 +31,8 @@ main > img {
 .hero-content h1 {
     font-size: 66px;
     font-weight: 800;
-    line-height: 72px;
     letter-spacing: -1px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .hero-content p {
@@ -42,13 +43,12 @@ main > img {
 
 .hero-buttons {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
 }
 
 .btn-hero-primary,
 .btn-hero-secondary {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     height: 60px;
     padding: 0 30px;
@@ -69,9 +69,9 @@ main > img {
 }
 
 .btn-hero-secondary {
-    border: 2px solid var(--color-blue);
-    background-color: var(--color-white);
-    color: var(--color-blue);
+    border: 2px solid var(--color-accent);
+    background-color: var(--color-surface);
+    color: var(--color-accent);
 }
 
 .btn-hero-secondary:hover {
@@ -97,7 +97,7 @@ main > img {
     flex-shrink: 0;
 }
 
-.benefit-card-content h2 {
+.benefit-card-content h3 {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
@@ -128,7 +128,7 @@ main > img {
     font-size: 48px;
     font-weight: 800;
     line-height: 56px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .learn-header p {
@@ -180,7 +180,7 @@ main > img {
     font-size: 40px;
     font-weight: 800;
     line-height: 46px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .learn-featured-content p {
@@ -210,7 +210,7 @@ main > img {
     height: 10px;
     flex-shrink: 0;
     border-radius: 50%;
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-title);
 }
 
 .btn-learn {
@@ -246,15 +246,15 @@ main > img {
     border-radius: 24px;
 }
 
-#topic-blue {
+.topic-card.topic-blue {
     background-color: var(--color-blue-light);
 }
 
-#topic-green {
+.topic-card.topic-green {
     background-color: var(--color-green);
 }
 
-#topic-rose {
+.topic-card.topic-rose {
     background-color: var(--color-lilac);
 }
 
@@ -278,7 +278,7 @@ main > img {
     font-size: 26px;
     font-weight: 700;
     line-height: 32px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .topic-card-content p {
@@ -290,13 +290,13 @@ main > img {
 .topic-link {
     font-size: 19px;
     font-weight: 700;
-    color: var(--color-blue);
+    color: var(--color-accent);
     text-underline-offset: 6px;
     transition: 0.5s;
 }
 
-.topic-link:hover{
-    color: rgb(2, 2, 126);
+.topic-link:hover {
+    color: var(--color-title);
 }
 
 .section-scams {
@@ -341,7 +341,7 @@ main > img {
     gap: 18px;
     padding: 24px;
     border-radius: 24px;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
 }
 
 .scam-tag {
@@ -353,10 +353,21 @@ main > img {
     color: var(--color-blue-dark);
 }
 
-.tag-yellow { background-color: var(--color-yellow); }
-.tag-red    { background-color: var(--color-red-light); }
-.tag-green  { background-color: var(--color-green-light); }
-.tag-blue   { background-color: var(--color-blue-tag); }
+.tag-yellow {
+    background-color: var(--color-yellow);
+}
+
+.tag-red {
+    background-color: var(--color-red-light);
+}
+
+.tag-green {
+    background-color: var(--color-green-light);
+}
+
+.tag-blue {
+    background-color: var(--color-blue-tag);
+}
 
 .scam-message {
     width: 100%;
@@ -383,7 +394,7 @@ main > img {
 .scam-why .scam-why-title {
     font-size: 16px;
     font-weight: 700;
-    color: var(--color-blue);
+    color: var(--color-accent);
 }
 
 .section-steps {
@@ -395,7 +406,7 @@ main > img {
     background-color: var(--color-sky-light);
 }
 
-.section-steps > img {
+.section-steps>img {
     width: 100%;
     max-width: 520px;
     min-width: 0;
@@ -413,7 +424,7 @@ main > img {
     font-size: 48px;
     font-weight: 800;
     line-height: 56px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .step-card {
@@ -438,7 +449,7 @@ main > img {
     font-size: 26px;
     font-weight: 700;
     line-height: 32px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .step-card-content p {
@@ -465,7 +476,7 @@ main > img {
     font-size: 48px;
     font-weight: 800;
     line-height: 56px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .faq-header p {
@@ -494,12 +505,12 @@ main > img {
     padding: 24px 28px;
     border: 2px solid var(--color-line);
     border-radius: 20px;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     transition: 0.5s;
     cursor: pointer;
 }
 
-.faq-card:hover{
+.faq-card:hover {
     transform: scale(1.03);
 }
 
@@ -507,7 +518,7 @@ main > img {
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
 }
 
 .faq-card img {
@@ -530,7 +541,7 @@ main > img {
     background-color: var(--color-yellow);
 }
 
-.tip-card > img {
+.tip-card>img {
     width: 96px;
     flex-shrink: 0;
 }
@@ -542,18 +553,18 @@ main > img {
     gap: 10px;
 }
 
-.tip-card-content h4 {
+.tip-card-content h3 {
     font-size: 20px;
     font-weight: 700;
     color: var(--color-blue-dark);
 }
 
 .tip-card-content p {
+    max-width: 850px;
     font-size: 36px;
     font-weight: 800;
     line-height: 44px;
     color: var(--color-blue-dark);
-    width: 850px;
 }
 
 .btn-tip {
@@ -571,7 +582,150 @@ main > img {
     transition: 0.5s;
 }
 
-.btn-tip:hover{
+.btn-tip:hover {
     transform: scale(1.02);
     background-color: rgb(231, 229, 229);
+}
+
+@media (max-width: 1280px) {
+
+    .section-hero,
+    .section-benefits,
+    .section-learn,
+    .section-scams,
+    .section-steps,
+    .section-faq,
+    .section-tip {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .section-benefits {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .section-hero,
+    .section-steps,
+    .section-faq {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .learn-header,
+    .scams-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .learn-featured,
+    .tip-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .faq-header {
+        max-width: none;
+    }
+
+    .faq-list {
+        width: 100%;
+    }
+
+    .scams-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tip-card-content p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .section-hero,
+    .section-learn,
+    .section-scams,
+    .section-steps,
+    .section-faq {
+        padding: 56px 20px;
+    }
+
+    .section-benefits {
+        grid-template-columns: 1fr;
+        padding: 32px 20px;
+    }
+
+    .section-tip {
+        padding: 32px 20px 56px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .learn-header h2,
+    .scams-header h2,
+    .steps-content h2,
+    .faq-header h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        justify-content: center;
+    }
+
+    .learn-featured {
+        padding: 24px;
+    }
+
+    .learn-featured-image {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .learn-featured-image img {
+        width: 100%;
+    }
+
+    .learn-featured-content h3 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .topic-grid {
+        flex-direction: column;
+    }
+
+    .scams-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-card {
+        padding: 20px;
+    }
+
+    .faq-card p {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .tip-card {
+        padding: 32px 24px;
+    }
+
+    .tip-card-content p {
+        font-size: 24px;
+        line-height: 32px;
+    }
 }

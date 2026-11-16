@@ -23,88 +23,32 @@
     --color-green-light: #9FD8B5;
     --color-blue-tag: #A9C9F2;
     --color-bubble: #EEF1F5;
+    --color-sky-light: #F0F6FD;
+    --color-muted: #4A5B70;
+    --color-bg: #FFFFFF;
+    --color-text: #1C2733;
+    --color-title: #0B2A4A;
+    --color-surface: #FFFFFF;
+    --color-accent: #0B5CAD;
+    --color-track: #2B3A4A;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background-color: var(--color-blue-dark);
-    padding: 80px 120px 40px;
-    justify-content: center;
-}   
-
-.content-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-shrink: 0;
-    object-fit: contain;
-}
-
-.content-footer h2{
-    font-size: 32px;
-    font-weight: bold;
-    width: 440px;
-    color: white;
-}
-
-.content-footer p{
-    font-size: 19px;
-    color: #B9C8DC;
-    width: 400px;
-}
-
-.img-footer{
-    flex-shrink: 0;
-    width: 150px;
-    height: auto;
-}
-
-
-.nav-links-footer{
-    display: flex;
-    gap: 80px;
-}
-
-.link-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.link-footer h3{
-    font-size: 18px;
-    color: var(--color-yellow);
-    font-weight: bold;
-}
-
-.link-footer a{
-    text-decoration: none;
-    color: var(--color-white);
-    transition: 0.5s;
-}
-
-.link-footer a:hover{
-    color: #9c9b9b;
-}
-
-.footer-content-container{
-    display: flex;
-    gap: 80px;
-    justify-content: space-between;
-    border-bottom: 1px solid #6d6c6c;
-    padding-bottom: 50px;
-}
-
-.content-footer-final{
-    display: flex;
-    justify-content: space-between;
-}
-
-.content-footer-final p{
-    color: #B9C8DC;
-    font-size: 18px;
+.dark {
+    --color-bg: #0F1822;
+    --color-text: #E3EAF2;
+    --color-title: #F0F5FB;
+    --color-surface: #18232F;
+    --color-accent: #8CBDF5;
+    --color-muted: #A7B6C8;
+    --color-line: #2B3A4A;
+    --color-linear: linear-gradient(to bottom, #0F1822, #132A44);
+    --color-sky-light: #142130;
+    --color-blue-light: #16304D;
+    --color-yellow-light: #2E2A1A;
+    --color-green: #15302A;
+    --color-lilac: #25223B;
+    --color-bubble: #22303F;
+    --color-track: #DCE4EE;
 }
 
 header {
@@ -115,7 +59,7 @@ header {
     height: 96px;
     padding: 0 120px;
     border-bottom: 1px solid var(--color-line);
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
 }
 
 .header-logo {
@@ -133,23 +77,23 @@ header {
     gap: 36px;
 }
 
-.header-nav > a {
+.header-nav>a {
     font-size: 19px;
     font-weight: 500;
-    color: var(--color-black);
+    color: var(--color-text);
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.header-nav > a:hover {
-    color: var(--color-blue);
+.header-nav>a:hover {
+    color: var(--color-accent);
 }
 
-#active-link {
+.header-nav .active-link {
     padding-bottom: 6px;
-    border-bottom: 3px solid var(--color-blue);
+    border-bottom: 3px solid var(--color-accent);
     font-weight: 700;
-    color: var(--color-blue);
+    color: var(--color-accent);
 }
 
 .header-accessibility {
@@ -169,15 +113,20 @@ header {
     width: 44px;
     height: 44px;
     border-radius: 10px;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     font-weight: 700;
-    color: var(--color-blue-dark);
+    color: var(--color-title);
     text-decoration: none;
     transition: 0.5s;
 }
 
-.header-accessibility a:hover{
+.header-accessibility a:hover {
     transform: scale(1.08);
+}
+
+.header-accessibility .header-contrast {
+    background-color: var(--color-white);
+    cursor: pointer;
 }
 
 #font-decrease {
@@ -190,6 +139,10 @@ header {
 
 #contrast-icon {
     width: 18px;
+}
+
+.header-contrast {
+    cursor: pointer;
 }
 
 .btn-light {
@@ -288,4 +241,61 @@ footer {
 .footer-bottom p {
     font-size: 17px;
     color: var(--color-gray);
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 0 40px;
+    }
+
+    .header-nav {
+        gap: 24px;
+    }
+
+    footer {
+        padding: 80px 40px 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+        padding: 20px 40px;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 24px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .header-nav>a {
+        font-size: 17px;
+    }
+
+    footer {
+        padding: 56px 20px 32px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
 }

@@ -313,6 +313,7 @@ body {
     background-color: var(--color-green);
 }
 
+<<<<<<< HEAD
 .rule-card.rule-blue {
     background-color: var(--color-blue-light);
 }
@@ -437,3 +438,61 @@ body {
         padding: 24px;
     }
 }
+=======
+#blue{
+    background-color: #EAF2FC;
+}
+
+@media (min-width: 1200px) {
+  
+}
+@media (min-width: 992px) {
+  
+}
+@media only screen and (min-width: 768px) {
+    .section-quiz {
+    width: 250vw;
+    padding: 60px;
+    flex-direction: column;
+    }
+}
+@media only screen and (max-width: 480px) {
+ .section-quiz {
+    width: 250vw;
+    padding: 60px;
+    flex-direction: column;
+    
+ }
+
+ .quiz-img {
+   width: 100vw;
+   height: 55vh;
+   position: absolute;
+   left: 120vw;
+   
+ }
+ 
+ .section-regras {
+    width: 250vw;
+    text-align: center;
+}
+
+ .quiz-card {
+    width: 5000vw;
+    padding: 30px;
+    position: relative;
+    left: 140px;
+    
+}
+
+
+ #footer {
+       width: 250vw;
+
+ }
+
+    
+ }
+   
+  
+>>>>>>> f314f303c91939cde56d944f79e7d211d5feb745
